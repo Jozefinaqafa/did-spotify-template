@@ -1,7 +1,7 @@
 const express = require('express'); // Express web server framework
 const path = require("path");
-const PORT = "8888"; // use this locally
-// const PORT = process.env.PORT || 8888; // use this for when deploying on a server
+//const PORT = "8888"; // use this locally
+const PORT = process.env.PORT || 8888; // use this for when deploying on a server
 const publicPath = path.join(__dirname + '/public');
 const app = express();
 
