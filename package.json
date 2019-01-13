@@ -1,12 +1,23 @@
 {
-"author": "Dublin Institute of Design",
-"name": "spotify-artist-battle-app",
-"description": "Battle Artsits to see who is the best!",
-"scripts": {
-  "start": "node app.js"
-},
-"version": "0.0.1",
-"dependencies": {
-  "express": "~4.16.0"
-}
+  "author": "Dublin Institute of Design",
+  "name": "spotify-artist-battle-app",
+  "description": "Battle Artsits to see who is the best!",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "~4.16.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-jest": "^23.6.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "testURL": "https://did-spotify-template.herokuapp.com/battle/#access_token=BQAnRUDRCSyudlnkr3HP5KwhaLmjsHj2dPXewQJptkRhXKdBt5cOOAeDBUXzx5qv_e71P99XQIL7YdNzSVj7DL0-2rr4Htj361LwQVmt7coIGwawfrhwpob9i5Jt3th7oJB05DOd7a2CZ1EPxqwl7_y2y5GddFSdFqcgqgRG_5LWK-HlqMf3FQ&token_type=Bearer&expires_in=3600&state=Q3ZaB8LSSQSdpO9G"
+  }
 }

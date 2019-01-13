@@ -3,9 +3,66 @@
   <head>
     <title>Spotify Artist Battle Template</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/battle.css">
   </head>
   <body>
     <div class="container">
     <div id="user-profile"></div>
-    <script type="module" src="/js/pages/battle.js"></script>
+
+      <h1 class="text-center">Who has the most followers or popularity!!</h1>
+      <h3 class="text-center">Challenge yourself!!!</h3>
+
+      <div id="battle-container">
+
+        <div id="alert-message" class="alert alert-warning" role="alert" style="display: none"></div>
+        <form id="search-form">
+          <div class="row">
+            <div class="col-md-4">
+              <select id="artist1" class="form-control">
+                <option disabled selected>Pick the artist #1</option>
+                <option value="3TVXtAsR1Inumwj472S9r4">Drake</option>
+                <option value="7dGJo4pcD2V6oG8kP0tJRR">Eminem</option>
+                <option value="7jLSEPYCYQ5ssWU3BICqrW">Picture This</option>
+                <option value="3KedxarmBCyFBevnqQHy3P">Jessie Reyez</option>
+                <option value="1uNFoZAHBGtllmzznpCI3s">Justin Bieber</option>
+              </select>
+            </div>
+            <div class="col-md-4 text-center">
+              <span id="versus">Versus</span>
+            </div>
+            <div class="col-md-4">
+              <select id="artist2" class="form-control">
+                <option disabled selected>Pick the artist #2</option>
+                <option value="15UsOTVnJzReFVN1VCnxy4">XXXTENTACION</option>
+                <option value="1zNqDE7qDGCsyzJwohVaoX">Anne Marie</option>
+                <option value="6vWDO969PvNqNYHIOW5v0m">Beyonce</option>
+                <option value="0hCNtLu0JehylgoiP8L4Gh">Nicki Minaj</option>
+                <option value="7bXgB6jMjp9ATFy66eO08Z">Chris Brown</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <select id="battle-type" class="form-control">
+                <option disabled selected>Battle on...</option>
+                <option value="popularity">Popularity</option>
+                <option value="followers">Followers</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-md-offset-5">
+              <input type="button" id="btn-battle" class="btn btn-primary" value="Battle!" />
+            </div>
+          </div>
+        </form>
+
+
+      </div>
+      <div id="result"></div>
+      <!––     -->
+      <script type="module" src="/js/pages/battle.js"></script>
+    </div>
+
+  </body>
 </html>

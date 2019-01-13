@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Spotify Artist Battle Template</title>
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/battle.css">
+  </head>
+  <body>
+    <div class="container">
+    <div id="user-profile"></div>
+
+      <div id="battle-container">
+        <h1>Questionnaire-based on artist knowledge</h1>
+        <p>Challenge yourself!!!</p>
+        <div id="alert-message" class="alert alert-warning" role="alert" style="display: none"></div>
+        <form id="search-form">
+
+          <select id="artist1" class="form-control">
+            <option disabled selected>Pick the artist #1</option>
+            <option value="3TVXtAsR1Inumwj472S9r4">Drake</option>
+            <option value="7dGJo4pcD2V6oG8kP0tJRR">Eminem</option>
+            <option value="7dGJo4pcD2V6oG8kP0tJRR">Eminem</option>
+            <option value="7dGJo4pcD2V6oG8kP0tJRR">Eminem</option>
+            <option value="7dGJo4pcD2V6oG8kP0tJRR">Eminem</option>
+          </select>
+
+          <select id="artist2" class="form-control">
+            <option disabled selected>Pick the artist #2</option>
+            <option value="15UsOTVnJzReFVN1VCnxy4">XXXTENTACION</option>
+            <option value="0hCNtLu0JehylgoiP8L4Gh">Nicki Minaj</option>
+            <option value="0hCNtLu0JehylgoiP8L4Gh">Nicki Minaj</option>
+            <option value="0hCNtLu0JehylgoiP8L4Gh">Nicki Minaj</option>
+            <option value="0hCNtLu0JehylgoiP8L4Gh">Nicki Minaj</option>
+          </select>
+
+          <select id="battle-type" class="form-control">
+            <option disabled selected>Battle on...</option>
+            <option value="popularity">Popularity</option>
+            <option value="followers">Followers</option>
+          </select>
+
+          <input type="button" id="battle" class="btn btn-primary" value="Battle!" />
+        </form>
+        <div id="result"></div>
+      </div>
+      <!––     -->
+      <script type="module" src="/js/pages/battle.js"></script>
+    </div>
+
+  </body>
+</html>
